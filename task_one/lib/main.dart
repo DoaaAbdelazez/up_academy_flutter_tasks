@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:task_one/task7/login.dart';
 
 void main() {
   runApp(MyApp());
@@ -8,12 +9,18 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: HomePage(),
+      debugShowCheckedModeBanner: false,
+      home: Login(),
     );
   }
 }
 
 class HomePage extends StatelessWidget {
+  
+   const HomePage({super.key});
+
+  
+  
   @override
   Widget build(BuildContext context) {
     return Scaffold(
